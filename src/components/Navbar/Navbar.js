@@ -1,12 +1,20 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
   return (
     <header>
-      <h2>Logo Here</h2>
+      <Link to="/">
+        <img className="pizza-logo" src="/images/logo.png" alt="logo-img" />
+      </Link>
       <nav>
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/products">OP Pizza</NavLink>
+        <NavLink to="/cart">
+          <div className="pizza-cart">
+            <span>10</span>
+            <img src="/images/cart.png" alt="cart-png" />
+          </div>
+        </NavLink>
       </nav>
     </header>
   );

@@ -1,12 +1,12 @@
 import Navbar from "../components/Navbar/Navbar";
 
-const About = () => {
+const Cart = () => {
   return (
     <>
       <Navbar />
-      <h2>Hello from about page.</h2>
+      Cart Products
     </>
   );
 };
 
-export default About;
+export default Cart;
