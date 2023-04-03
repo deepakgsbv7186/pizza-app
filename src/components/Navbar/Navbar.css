@@ -1,0 +1,23 @@
+/* nav{
+    color:#FF5F9E;
+    font-size: 2rem;
+} */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.active{
+    color: white;
+}
+nav{
+    display:flex;
+    justify-content: space-evenly;
+    width: 20vw;
+}
+
+nav a{
+    text-decoration: none;
+    color: #FF5F9E;
+    font-size: 2rem;
+    padding: 10px;
+}
