@@ -18,8 +18,8 @@ const Home = () => {
             <img src="/images/pizza.png" alt="pizza" />
           </div>
         </div>
+        <Products />
       </div>
-      <Products />
     </>
   );
 };
