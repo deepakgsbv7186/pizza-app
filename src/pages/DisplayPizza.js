@@ -6,19 +6,36 @@ const DisplayPizza = () => {
   const [pizza, setPizza] = useState({});
   const params = useParams();
   const navigate = useNavigate();
+  // useEffect(() => {
+  //   fetch(`https://star-spark-pasta.glitch.me/api/products/${params._id}`)
+  //     .then((response) => response.json())
+  //     .then((pizza) => {
+  //       setPizza(pizza);
+  //     });
+  // }, []);
+
   useEffect(() => {
-    fetch(`https://star-spark-pasta.glitch.me/api/products/${params._id}`)
-      .then((response) => response.json())
-      .then((pizza) => {
-        setPizza(pizza);
-      });
-  }, []);
+    const fetchData = async () => {
+      try {
+        // Fetch data asynchronously
+        const response = await fetch(
+          `https://star-spark-pasta.glitch.me/api/products/${params._id}`
+        );
+        const pizza = await response.json();
+        setPizza(pizza); // Update component state with fetched data
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData(); // Call the async function to fetch data
+  }, [params._id]);
 
   // console.log(params);
   return (
     <>
       <Navbar />
-      <button className="m-5 font-bold" onclick={() => navigate(-1)}>
+      <button className="m-5 font-bold" onClick={() => navigate(-1)}>
         🡠 Back
       </button>
       <div className="flex mt-14 ml-12">

@@ -1,6 +1,5 @@
+import Menu from "../components/Menu/Menu";
 import Navbar from "../components/Navbar/Navbar";
-// import Pizza from "../components/Pizza/Pizza";
-import Products from "./Products";
 const Home = () => {
   return (
     <>
@@ -18,7 +17,7 @@ const Home = () => {
             <img src="/images/pizza.png" alt="pizza" />
           </div>
         </div>
-        <Products />
+        <Menu />
       </div>
     </>
   );
