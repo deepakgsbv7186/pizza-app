@@ -1,35 +1,43 @@
-header{
+header {
     display: flex;
     justify-content: space-between;
-    margin: 10px 50px;
+    /*     margin: 10px 50px; */
+    background-color: #DF2E38;
 }
-.active{
+
+.active {
     color: white;
 }
-header .pizza-logo{
-    background-color: #FF5F9E;
+
+header .pizza-logo {
+    background-color: transparent;
     border-radius: 50%;
     padding: 10px;
     height: 50px;
-}
-nav{
-    display:flex;
-    justify-content: space-evenly;
-    width: 20vw;
-    margin-right: 50px;
+    margin: 8px 0 8px 50px;
 }
 
-nav a{
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20vw;
+    margin: 8px 50px 8px 0;
+}
+
+nav a {
     text-decoration: none;
-    color: #FF5F9E;
-    font-size: 1.2rem;
+    color: #FFF76A;
+    font-size: 1.1rem;
+    font-weight: 600;
     padding: 10px;
 }
-nav .pizza-cart{
+
+nav .pizza-cart {
     display: flex;
     justify-content: center;
-    background-color: #FF5F9E;
+    background-color: transparent;
     padding: 6px 25px;
     color: white;
     border-radius: 50%;
+    /*     font-size: 1.2rem; */
 }

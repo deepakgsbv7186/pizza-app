@@ -10,7 +10,7 @@ const Pizza = (props) => {
           <img src={pizza.image} alt="pizza-name" />
           <div className="text-center">
             <h2 className="text-lg font-bold py-2">{pizza.name}</h2>
-            <span className="bg-gray-200 py-1 rounded-full text-sm px-4">
+            <span className="bg-red-600 py-1 rounded-full text-sm px-4">
               {pizza.size}
             </span>
           </div>
